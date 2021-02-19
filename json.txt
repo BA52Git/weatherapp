@@ -1,0 +1,264 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "https://api.weather.gov/ontology#"
+    }
+  ],
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -122.4692392,
+          48.7689011
+        ],
+        [
+          -122.46290350000001,
+          48.7485677
+        ],
+        [
+          -122.43199910000001,
+          48.7527503
+        ],
+        [
+          -122.4383281,
+          48.7730839
+        ],
+        [
+          -122.4692392,
+          48.7689011
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "updated": "2021-02-19T04:58:54+00:00",
+    "units": "us",
+    "forecastGenerator": "BaselineForecastGenerator",
+    "generatedAt": "2021-02-19T06:59:15+00:00",
+    "updateTime": "2021-02-19T04:58:54+00:00",
+    "validTimes": "2021-02-18T22:00:00+00:00/P8DT3H",
+    "elevation": {
+      "value": 35.052,
+      "unitCode": "unit:m"
+    },
+    "periods": [
+      {
+        "number": 1,
+        "name": "Tonight",
+        "startTime": "2021-02-18T22:00:00-08:00",
+        "endTime": "2021-02-19T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 38,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "7 to 13 mph",
+        "windDirection": "S",
+        "icon": "https://api.weather.gov/icons/land/night/rain_showers,70?size=medium",
+        "shortForecast": "Rain Showers Likely",
+        "detailedForecast": "Rain showers likely. Cloudy, with a low around 38. South wind 7 to 13 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible."
+      },
+      {
+        "number": 2,
+        "name": "Friday",
+        "startTime": "2021-02-19T06:00:00-08:00",
+        "endTime": "2021-02-19T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 46,
+        "temperatureUnit": "F",
+        "temperatureTrend": "falling",
+        "windSpeed": "6 to 9 mph",
+        "windDirection": "SSW",
+        "icon": "https://api.weather.gov/icons/land/day/rain_showers,60?size=medium",
+        "shortForecast": "Rain Showers Likely",
+        "detailedForecast": "Rain showers likely. Mostly cloudy. High near 46, with temperatures falling to around 43 in the afternoon. South southwest wind 6 to 9 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible."
+      },
+      {
+        "number": 3,
+        "name": "Friday Night",
+        "startTime": "2021-02-19T18:00:00-08:00",
+        "endTime": "2021-02-20T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 37,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "6 mph",
+        "windDirection": "SSW",
+        "icon": "https://api.weather.gov/icons/land/night/rain_showers,60?size=medium",
+        "shortForecast": "Rain Showers Likely",
+        "detailedForecast": "Rain showers likely. Mostly cloudy, with a low around 37. South southwest wind around 6 mph. Chance of precipitation is 60%. New rainfall amounts between a tenth and quarter of an inch possible."
+      },
+      {
+        "number": 4,
+        "name": "Saturday",
+        "startTime": "2021-02-20T06:00:00-08:00",
+        "endTime": "2021-02-20T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 46,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "5 to 12 mph",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/day/rain_showers,50?size=medium",
+        "shortForecast": "Chance Rain Showers",
+        "detailedForecast": "A chance of rain showers. Mostly cloudy, with a high near 46. Southwest wind 5 to 12 mph. Chance of precipitation is 50%. New rainfall amounts between a tenth and quarter of an inch possible."
+      },
+      {
+        "number": 5,
+        "name": "Saturday Night",
+        "startTime": "2021-02-20T18:00:00-08:00",
+        "endTime": "2021-02-21T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 41,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "7 to 17 mph",
+        "windDirection": "S",
+        "icon": "https://api.weather.gov/icons/land/night/rain_showers,80/rain,90?size=medium",
+        "shortForecast": "Rain Showers then Light Rain",
+        "detailedForecast": "Rain showers before 4am, then rain. Cloudy, with a low around 41. South wind 7 to 17 mph, with gusts as high as 26 mph. Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible."
+      },
+      {
+        "number": 6,
+        "name": "Sunday",
+        "startTime": "2021-02-21T06:00:00-08:00",
+        "endTime": "2021-02-21T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 51,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "13 mph",
+        "windDirection": "S",
+        "icon": "https://api.weather.gov/icons/land/day/rain,90/rain,100?size=medium",
+        "shortForecast": "Light Rain",
+        "detailedForecast": "Rain. Cloudy, with a high near 51. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible."
+      },
+      {
+        "number": 7,
+        "name": "Sunday Night",
+        "startTime": "2021-02-21T18:00:00-08:00",
+        "endTime": "2021-02-22T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 45,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "13 mph",
+        "windDirection": "S",
+        "icon": "https://api.weather.gov/icons/land/night/rain,100?size=medium",
+        "shortForecast": "Light Rain",
+        "detailedForecast": "Rain. Cloudy, with a low around 45. Chance of precipitation is 100%."
+      },
+      {
+        "number": 8,
+        "name": "Monday",
+        "startTime": "2021-02-22T06:00:00-08:00",
+        "endTime": "2021-02-22T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 51,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "7 to 10 mph",
+        "windDirection": "SSW",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "shortForecast": "Light Rain",
+        "detailedForecast": "Rain before 4pm, then rain showers likely. Cloudy, with a high near 51."
+      },
+      {
+        "number": 9,
+        "name": "Monday Night",
+        "startTime": "2021-02-22T18:00:00-08:00",
+        "endTime": "2021-02-23T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 39,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "10 mph",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/night/rain_showers?size=medium",
+        "shortForecast": "Rain Showers Likely",
+        "detailedForecast": "Rain showers likely. Mostly cloudy, with a low around 39."
+      },
+      {
+        "number": 10,
+        "name": "Tuesday",
+        "startTime": "2021-02-23T06:00:00-08:00",
+        "endTime": "2021-02-23T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 46,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "8 to 12 mph",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/day/rain_showers/rain?size=medium",
+        "shortForecast": "Chance Rain Showers then Chance Light Rain",
+        "detailedForecast": "A chance of rain showers before 4pm, then a chance of rain. Partly sunny, with a high near 46."
+      },
+      {
+        "number": 11,
+        "name": "Tuesday Night",
+        "startTime": "2021-02-23T18:00:00-08:00",
+        "endTime": "2021-02-24T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 34,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "5 to 9 mph",
+        "windDirection": "SW",
+        "icon": "https://api.weather.gov/icons/land/night/rain/snow?size=medium",
+        "shortForecast": "Chance Light Rain then Slight Chance Rain And Snow",
+        "detailedForecast": "A chance of rain before 1am, then a slight chance of rain and snow between 1am and 4am. Mostly cloudy, with a low around 34."
+      },
+      {
+        "number": 12,
+        "name": "Wednesday",
+        "startTime": "2021-02-24T06:00:00-08:00",
+        "endTime": "2021-02-24T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 45,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "5 to 8 mph",
+        "windDirection": "SSE",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "shortForecast": "Slight Chance Rain And Snow Showers",
+        "detailedForecast": "A slight chance of rain and snow showers between 10am and 4pm, then a chance of rain. Partly sunny, with a high near 45."
+      },
+      {
+        "number": 13,
+        "name": "Wednesday Night",
+        "startTime": "2021-02-24T18:00:00-08:00",
+        "endTime": "2021-02-25T06:00:00-08:00",
+        "isDaytime": false,
+        "temperature": 36,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "7 to 10 mph",
+        "windDirection": "SSE",
+        "icon": "https://api.weather.gov/icons/land/night/rain/snow?size=medium",
+        "shortForecast": "Chance Light Rain then Rain And Snow Likely",
+        "detailedForecast": "A chance of rain before 4am, then rain and snow likely. Mostly cloudy, with a low around 36."
+      },
+      {
+        "number": 14,
+        "name": "Thursday",
+        "startTime": "2021-02-25T06:00:00-08:00",
+        "endTime": "2021-02-25T18:00:00-08:00",
+        "isDaytime": true,
+        "temperature": 45,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "windSpeed": "12 mph",
+        "windDirection": "SSE",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "shortForecast": "Rain And Snow Likely",
+        "detailedForecast": "Rain and snow likely. Cloudy, with a high near 45."
+      }
+    ]
+  }
+}
