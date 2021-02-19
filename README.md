@@ -1,2 +1,2 @@
 # weatherapp
-Python application for an interactive weather interface
+Python application for an interactive weather interface.
