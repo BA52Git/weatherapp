@@ -1,3 +1,4 @@
+#Author: Ben Avery
 
 import json, urllib, urllib.request, datetime
 
