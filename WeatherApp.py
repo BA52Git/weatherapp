@@ -18,20 +18,19 @@ def gettodaysforecast():
     defaultlocation =  json.loads('{ "long" : 48.769 , "lat" : -122.459}')
     todayforecast = getcurweather(defaultlocation)
 
-
-    #TODO turn this into a function that takes in today forecast and returns the URL
-    forecastRequest = urllib.request.urlopen(todayforecast["properties"]['forecast'])
-    forecastData = json.load(forecastRequest)
-    shortforecast = forecastData['properties']['periods'][0]['shortForecast']
     temperature = forecastData['properties']['periods'][0]['temperature']
     print("It is {} degrees and the weather is {}".format(temperature,shortforecast))
 
+def shortforecast(weatherdata):
+    forecastRequest = urllib.request.urlopen(weatherdata["properties"]['forecast'])
+    forecastData = json.load(forecastRequest)
+    shortforecast = forecastData['properties']['periods'][0]['shortForecast']
+    return shortforecast
 
-def getcurweather(address):
-    weburl = "https://api.weather.gov/points/{},{}".format(address["long"], address["lat"])
-    #print(weburl)
+def getcurweather(gpscoords):
+    weburl = "https://api.weather.gov/points/{},{}".format(gpscoords["long"], gpscoords["lat"])
+    logging.debug(weburl)
     currequest = urllib.request.urlopen(weburl)
-#    print(currequest)
     curdata = json.load(currequest)
     logging.debug(curdata)
     return curdata
@@ -43,6 +42,8 @@ def main():
     #open the url (to an HTTPResponse object), load the data into a json object.
     defaultcoords = '{ "long" : 48.769 , "lat" : -122.459}'
     coordjson = json.loads(defaultcoords)
-    data = gettodaysforecast()
+    weatherdata = getcurweather(coordjson)
+    shortfore = shortforecast(weatherdata)
+    print("The short forecast is {}.".format(shortfore))
 
 main()
